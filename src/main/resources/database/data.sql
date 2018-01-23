@@ -1,0 +1,14 @@
+INSERT INTO [fowl] VALUES (1, 'Chicken', 'Chicken is a type of fowl', 1020, 0);
+INSERT INTO [fowl] VALUES (2, 'ChickenMcNuggets', 'Chicken is a type of nuggets', 100, 0);
+INSERT INTO [fowl] VALUES (3, 'Fowl', 'Fowl is a type of fowl', 100, 0);
+INSERT INTO [fowl] VALUES (4, 'SomeFowl', 'SomeFowl is a type of fowl', 154300, 0);
+INSERT INTO [fowl] VALUES (5, 'StrangeFowl', 'StrangeFowl is a type of fowl', 1080, 0);
+INSERT INTO [fowl] VALUES (6, 'CommonFowl', 'CommonFowl is a type of fowl', 3743, 0);
+INSERT INTO [fowl] VALUES (7, 'StupidFowl', 'StupidFowl is a type of fowl', 50, 0);
+INSERT INTO [fowl] VALUES (8, 'Sandy', 'Sandy is a type of fowl', 100, 0);
+INSERT INTO [fowl] VALUES (9, 'Cris', 'Cris is a type of fowl', 100, 0);
+INSERT INTO [fowl] VALUES (10, 'Trump', 'Trump is a type of fowl', 100, 0);
+INSERT INTO [fowl] VALUES (11, 'Putin', 'Putin is a type of fowl', 99, 0);
+INSERT INTO [fowl] VALUES (12, 'Shariy', 'Shariy is a type of fowl', 64, 0);
+INSERT INTO [fowl] VALUES (13, 'Poroshenko', 'Poroshenko is a type of fowl', 123, 0);
+INSERT INTO [fowl] VALUES (14, 'Lukashenko', 'Lukashenko is a type of fowl', 532, 0);

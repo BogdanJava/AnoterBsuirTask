@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+
+    margin-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+a {
+    color: #f85c37;
+}
+
+a:hover, a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.navbar {
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-inverse {
+    background: #2d2d2d;
+    border-color: #2d2d2d;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: rgba(136, 65, 76, 0.53);
+}
+
+.navbar-inverse .navbar-brand {
+    color: #999;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+#headerwrap {
+    margin-top: -10px;
+    padding-top: 20px;
+    text-align: center;
+    background: url(../img/header-bg.jpg) no-repeat center center;
+    min-height: 500px;
+    width: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#add {
+    background: url(../img/addfowl-bg.jpg) no-repeat center center;
+    padding-top: 30px;
+    width: 100%;
+    min-height: 500px;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#add * {
+    margin: 10px auto;
+}
+
+#add h1 {
+    font-size: 40px;
+    color: #6b5f61;
+}
+
+#add h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #09130ccf;
+}
+
+#add input::placeholder, textarea::placeholder {
+    font-size: 20px;
+    color: #b6e5a5;
+}
+
+#add input, #add textarea {
+    background: #92b19e;
+    height: 7%;
+    border: 1px solid #8ec1a2;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#add textarea {
+    height: 14%;
+}
+
+#add input:focus, #add textarea:focus {
+    background: #89cc94;
+}
+
+.form-group {
+    max-width: 500px;
+}
+
+.container {
+    margin-bottom: 0 !important;
+}
+
+#add label {
+    float: left;
+}
+
+#headerwrap h1 {
+    margin-top: 100px;
+    font-size: 70px;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 3px;
+}
+
+#headerwrap h2 {
+    color: black;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.w {
+    padding-top: 35px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+#dg {
+    background: #e0e0e0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#dg h4 {
+    font-size: 40px;
+}
+
+.tilt {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.tilt:hover {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.wb {
+    padding-top: 35px;
+    margin-bottom: 0;
+}
+
+.wb h4 {
+    font-size: 35px;
+}
+
+#lg {
+    background: #ebebeb;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#lg h4 {
+    font-size: 45px;
+}
+
+#reddiv {
+    background: #ff7878;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#reddiv h4 {
+    color: white;
+    font-size: 45px;
+}
+
+#reddiv p {
+    color: white;
+}
+
+#footer {
+    background: #2d2d2d;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#addform {
+    background: wheat;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#footer i {
+    font-size: 30px;
+    color: #bdbdbd;
+    padding: 20px;
+}
+
+#footer i:hover {
+    color: #ff7878;
+}
+
+.error-message {
+    color: #ff1e4a;
+    font-weight: 600;
+    font-family: "Lato";
+}
