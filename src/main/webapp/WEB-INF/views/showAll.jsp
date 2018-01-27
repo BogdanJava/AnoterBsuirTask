@@ -127,6 +127,8 @@
                                 <span id="fowlCount"></span>
                                 <h3 class="modal-title">Total number of species</h3>
                                 <span id="fowlSpeciesCount"></span>
+                                <h3 class="modal-title">Random fowl</h3>
+                                <span id="randomFowl"></span>
                             </div>
                             <div class="modal-footer">
                                 <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
