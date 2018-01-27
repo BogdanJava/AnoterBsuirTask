@@ -36,7 +36,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="${contextPath}/welcome">Welcome</a></li>
                 <li><a href="${contextPath}/add">Add</a></li>
-                <li><a href="${contextPath}/show">Show fowls</a> </li>
+                <li><a href="${contextPath}/show">Show fowls</a></li>
             </ul>
         </div>
     </div>
@@ -58,6 +58,8 @@
                                             class="material-icons">&#xE147;</i> <span>Add New Fowl</span></a>
                                     <a href="#deleteFowlModal" class="btn btn-danger" data-toggle="modal"><i
                                             class="material-icons">&#xE15C;</i> <span>Delete</span></a>
+                                    <a href="#statisticsModal" onclick="setupStatistics()" class="btn btn-warning" data-toggle="modal"><i
+                                            class="material-icons">computer</i> <span>Statistics</span></a>
                                 </div>
                             </div>
                         </div>
@@ -94,10 +96,13 @@
                                         <a onclick="editHandle(new Fowl('${fowl.id}','${fowl.name}','${fowl.number}','${fowl.description}'))"
                                            href="#editFowlModal" class="edit" data-toggle="modal">
                                             <i class="material-icons" data-toggle="tooltip"
-                                                    title="Edit">&#xE254;</i></a>
-                                        <a href="#" onclick="document.getElementById('deleteSingleForm_${fowl.id}').submit()" class="delete" data-toggle="modal"><i
+                                               title="Edit">&#xE254;</i></a>
+                                        <a href="#"
+                                           onclick="document.getElementById('deleteSingleForm_${fowl.id}').submit()"
+                                           class="delete" data-toggle="modal"><i
                                                 class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                        <form id="deleteSingleForm_${fowl.id}" action="${contextPath}/delete" method="post">
+                                        <form id="deleteSingleForm_${fowl.id}" action="${contextPath}/delete"
+                                              method="post">
                                             <input type="hidden" name="deleteId" value="${fowl.id}">
                                         </form>
                                     </td>
@@ -108,12 +113,34 @@
                     </div>
                 </div>
 
+                <div id="statisticsModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Statistics</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    &times;
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="modal-title">Total fowl count</h3>
+                                <span id="fowlCount"></span>
+                                <h3 class="modal-title">Total number of species</h3>
+                                <span id="fowlSpeciesCount"></span>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div id="addFowlModal" class="modal fade">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <form:form action="${contextPath}/add" method="post" modelAttribute="fowl">
                                 <div class="modal-header">
-                                    <h4 class="modal-title">Add Employee</h4>
+                                    <h4 class="modal-title">Add Fowl</h4>
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                                         &times;
                                     </button>
@@ -125,7 +152,7 @@
                                         <form:errors path="name" cssClass="error-message"/>
                                     </div>
                                     <div class="form-group">
-                                        <label>Number</label>
+                                        <label>Amount</label>
                                         <form:input type="text" class="form-control" path="number"/>
                                         <form:errors path="number" cssClass="error-message"/>
                                     </div>
@@ -166,12 +193,13 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Description</label>
-                                        <textarea id="editDescription" name="description" class="form-control" required></textarea>
+                                        <textarea id="editDescription" name="description" class="form-control"
+                                                  required></textarea>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
                                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel"
-                                    onclick="cancelEditModalHandle()">
+                                           onclick="cancelEditModalHandle()">
                                     <input type="submit" class="btn btn-info" value="Save">
                                 </div>
                             </form>
@@ -198,7 +226,8 @@
                                 <div class="modal-footer">
                                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
                                     <input type="button" class="btn btn-danger" value="Delete"
-                                           onclick="deleteHandle(document.getElementsByName('options[]'))" id="deleteButtonBtn">
+                                           onclick="deleteHandle(document.getElementsByName('options[]'))"
+                                           id="deleteButtonBtn">
                                     <input type="submit" style="display: none" id="deleteSubmitBtn">
                                 </div>
                             </form>
@@ -216,9 +245,7 @@
 <div id="footer">
     <div class="container">
         <div class="row centered">
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitch"></i></a>
+            <span id="currentDate"></span>
         </div>
     </div>
 </div>
@@ -228,5 +255,7 @@
 <script type="text/javascript" src="${contextPath}/resources/script/table.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/script/editModalHandler.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/script/deleteModalHandler.js"></script>
+<script src="${contextPath}/resources/script/date.js"></script>
+<script src="${contextPath}/resources/script/statisticsModal.js"></script>
 </body>
 </html>

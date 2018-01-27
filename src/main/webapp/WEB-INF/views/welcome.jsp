@@ -52,14 +52,13 @@
 <div id="footer">
     <div class="container">
         <div class="row centered">
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitch"></i></a>
+            <span id="currentDate"></span>
         </div>
     </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="${contextPath}/resources/script/bootstrap.min.js"></script>
+<script src="${contextPath}/resources/script/date.js"></script>
 </body>
 </html>

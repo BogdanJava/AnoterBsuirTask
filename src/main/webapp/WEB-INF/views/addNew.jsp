@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="form-group">
-                    <form:label for="fowlNumber" path="number">Number</form:label>
+                    <form:label for="fowlNumber" path="number">Amount</form:label>
                     <form:input pattern="[0-9]*" path="number" id="fowlNumber" cssClass="form-control"/>
                     <form:errors path="number" cssClass="error-message"/>
                 </div>
@@ -72,14 +72,13 @@
 <div id="footer">
     <div class="container">
         <div class="row centered">
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitch"></i></a>
+            <span id="currentDate"></span>
         </div>
     </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="${contextPath}/resources/script/bootstrap.min.js"></script>
+<script src="${contextPath}/resources/script/date.js"></script>
 </body>
 </html>
